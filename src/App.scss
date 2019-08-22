@@ -1,0 +1,122 @@
+$background-color1: #ecf5ec;
+$background-color2: #ffffff;
+
+$font-color1: #00508d;
+$font-color2: #757575;
+
+$font-family1: 'Open Sans', sans-serif;
+
+.app{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.home{
+  background-color: $background-color1;
+  padding: .4rem 1rem;
+  min-height: 90vh;
+
+  &__logo{
+    width: 5rem;
+  }
+
+  &__headline{
+    font-family: $font-family1;
+    color: $font-color1;
+    font-size: 1.1rem;
+    margin: 1.8rem 0 .8rem 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__greeting{
+    font-family: $font-family1;
+    color: $font-color2;
+    font-size: .79rem;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  &__menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+
+    &__item{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #ffffff;
+      border-radius: 5px;
+      margin: .3rem 0;
+      padding: 1rem .5rem;
+      box-shadow: 0px 0px 1px 0px #b6bab6;
+      
+      &__logo{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: .5rem;
+      }
+
+      &__desc{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: .5rem 0;
+        margin-left: -1rem;
+        justify-content: space-between;
+        
+        .menu-title{
+          font-family: $font-family1;
+          color: $font-color1;
+          font-size: .79rem;
+        }
+        
+        .menu-desc{
+          font-family: $font-family1;
+          color: $font-color2;
+          font-size: .79rem;
+        }
+      }
+
+      &__arrow{
+        width: 1rem;
+        height: 1rem;
+        align-self: center;
+      }
+      
+    }
+  }
+
+}
+
+.nav{
+  min-height: 10vh;
+  background-color: $background-color2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+  &__item{
+    padding: .5rem 0;
+
+    &__icon{
+      min-width: 1.35rem;
+      height: 1.2rem;
+      display: block;
+      margin: .2rem auto;
+    }
+
+    &__desc{
+      font-family: $font-family1;
+      color: $font-color2;
+      font-size: .7rem;
+    }
+  }
+}

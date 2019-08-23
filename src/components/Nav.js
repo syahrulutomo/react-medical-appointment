@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
 import Nav1 from './../img/nav1.png';
 import Nav2 from './../img/nav2.png';
 import Nav3 from './../img/nav3.png';

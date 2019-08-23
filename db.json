@@ -1,12 +1,377 @@
 {
-  "posts": [
+  "dokter": [
     {
-      "title": "CopyRight Automatico",
-      "tags": "[JS]"
+      "id": 1,
+      "nama": "dr. Agieta Zulkifli, Sp.THT-KL",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Wanita",
+      "keahlian": [
+        "Bedah Sinus Endoskopi dan Nasal",
+        "Bedah Nasal Endoskopi",
+        "Timpanolasti",
+        "Irigasi Telinga",
+        "Korpus Alienum THT",
+        "BERA (Brainstem Evoked Response Audiometry)",
+        "Radiologi THT",
+        "Tindakan THT",
+        "Tes Pendengaran",
+        "Operasi Implan Koklea"
+      ],
+      "penyakit_terkait": [
+        "Batuk Kronis",
+        "Sinusitis Kronis",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "bisa"
     },
     {
-      "title": "HtmlWebpackPlugin Multiples HTML files",
-      "tags": "[JS, webpack]"
+      "id": 2,
+      "nama": "dr. Adisti Mega Rinindra, Sp.THT-KL",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Wanita",
+      "keahlian": [
+        "BERA (Brainstem Evoked Response Audiometry)",
+        "Endoskopi Telinga",
+        "Foto Rontgen THT",
+        "Irigasi Telinga",
+        "Korpus Alienum THT",
+        "Operasi Amandel",
+        "Tes Pendengaran",
+        "Tympanoplasty"
+      ],
+      "penyakit_terkait": [
+        "Kanker nasofaring",
+        "Radang amandel (tonsilitis)",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "tidak bisa"
+    },
+    {
+      "id": 3,
+      "nama": "Dr. dr. Mirta Hediyati Reksodiputro, Sp.THT-KL(K)",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Wanita",
+      "keahlian": [
+        "Bedah THT",
+        "Tes Pendengaran",
+        "Operasi Sinusitis",
+        "Korpus Alienum THT",
+        "Irigasi Telinga",
+        "BERA (Brainstem Evoked Response Audiometry)",
+        "Nasal & Sinus Endoscopic Surgery",
+        "Tindakan THT",
+        "Operasi Amandel",
+        "Endoskopi Telinga",
+        "Terapi Laser Untuk Sinusitis",
+        "Tympanoplasty"
+      ],
+      "penyakit_terkait": [
+        "Kanker nasofaring",
+        "Radang amandel (tonsilitis)",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "tidak bisa"
+    },
+    {
+      "id": 4,
+      "nama": "dr. Rosita Muthalib",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan Abdomen",
+        "Nebulizer",
+        "Perawatan Luka",
+        "Vaksin Orang Dewasa"
+      ],
+      "penyakit_terkait": [
+        "Luka Gores",
+        "Luka Bakar",
+        "Luka Tusuk"
+      ],
+      "janji_online": "tidak bisa"   
+    },
+    {
+      "id": 5,
+      "nama": "dr. Ahmad Subangkit",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Pemeriksaan Abdomen",
+        "Nebulizer",
+        "Perawatan Kulit"
+      ],
+      "penyakit_terkait": [
+        "Luka Gores",
+        "Luka Bakar",
+        "Luka Tusuk"
+      ],
+      "janji_online": "tidak bisa"   
+    },
+    {
+      "id": 6,
+      "nama": "dr. Ibnu Adipratama",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Pemeriksaan Abdomen",
+        "Nebulizer",
+        "Perawatan Kulit",
+        "Perawatan Luka"
+      ],
+      "penyakit_terkait": [
+        "Luka Gores",
+        "Luka Bakar",
+        "Luka Tusuk"
+      ],
+      "janji_online": "bisa"   
+    },
+    {
+      "id": 7,
+      "nama": "drg. Surtikanti Djanu I",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi",
+        "Pembersihan Gigi",
+        "Cabut Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa"   
+    },
+    {
+      "id": 8,
+      "nama": "drg. Bhunga Ayuningtias",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi",
+        "Pembersihan Gigi",
+        "Cabut Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa"   
+    },
+    {
+      "id": 9,
+      "nama": "drg. Nadia Arimbi",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi",
+        "Pembersihan Gigi",
+        "Cabut Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa"   
+    },
+    {
+      "id": 10,
+      "nama": "dr. Hengkie Frankie Lasanudin, Sp.JP",
+      "spesialisasi": "Dokter Spesialis Jantung",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Ekokardiografi",
+        "Pemeriksaan Jantung",
+        "Stress Test"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Arteri Koroner",
+        "Trachycardia",
+        "Penyakit Otot Jantung",
+        "Penyakit Katup Jantung",
+        "Bradikardi" 
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 11,
+      "nama": "dr. Djoko Maryono, Sp.PD, Sp.JP, FIHA",
+      "spesialisasi": "Dokter Spesialis Jantung",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Ekokardiografi",
+        "Pemeriksaan Jantung",
+        "Stress Test"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Arteri Koroner",
+        "Trachycardia",
+        "Penyakit Otot Jantung",
+        "Penyakit Katup Jantung",
+        "Bradikardi" 
+      ],
+      "janji_online": "bisa"
+    },
+    {
+      "id": 12,
+      "nama": "dr. Tri Wilujeng Prihartini, Sp.KK",
+      "spesialisasi": "Dokter Spesialis Kulit dan Kelamin",
+      "gender": "Wanita",
+      "keahlian": [
+        "Konsultasi Kulit dan Kelamin",
+        "Peeling",
+        "Perawatan Kerutan"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Kelamin",
+        "Luka Bakar",
+        "Jerawat",
+        "Luka Gores"
+      ],
+      "janji_online": "bisa" 
+    }
+  ],
+  "klinik": [
+    {
+      "id": 1,
+      "nama": "Rumah Sakit Pusat Pertamina",
+      "kota": "Jakarta Selatan",
+      "alamat": "Jl. Kyai Maja No.43, RW.8, Gunung, Kec. Kebayoran. Baru",
+      "jadwal": [
+        {
+          "id_dokter": 1,
+          "hari": "Senin",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 2,
+          "hari": "Senin",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 3,
+          "hari": "Kamis",
+          "pukul": "9.00 - 11.00"
+        },
+        {
+          "id_dokter": 5,
+          "hari": "Rabu",
+          "pukul": "13.00 - 15.00"
+        },
+        {
+          "id_dokter": 8,
+          "hari": "Jumat",
+          "pukul": "9.00 - 11.00"
+        },
+        {
+          "id_dokter": 11,
+          "hari": "Sabtu",
+          "pukul": "10.00 - 12.00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nama": "Klinik Pertamedika Sinabung",
+      "kota": "Jakarta Selatan",
+      "alamat": "JL. Sinabung II, No. 32 AF, Kebayoran Baru, RT.6/RW.5",
+      "jadwal": [
+        {
+          "id_dokter": 4,
+          "hari": "Selasa",
+          "pukul": "9.00 - 11.00"
+        },
+        {
+          "id_dokter": 6,
+          "hari": "Senin",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 7,
+          "hari": "Rabu",
+          "pukul": "9.00 - 11.00"
+        },
+        {
+          "id_dokter": 9,
+          "hari": "Kamis",
+          "pukul": "8.00 - 10.00"
+        },
+        {
+          "id_dokter": 10,
+          "hari": "Jumat",
+          "pukul": "9.00 - 11.00"
+        },
+        {
+          "id_dokter": 12,
+          "hari": "Sabtu",
+          "pukul": "13.00 - 15.00"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nama": "Rumah Sakit Kepolisian Pusat R.S. SUKANTO",
+      "kota": "Jakarta Timur",
+      "alamat": "Kramat Jati"
+    },
+    {
+      "id": 4,
+      "nama": "RS Premier Jatinegara",
+      "kota": "Jakarta Timur",
+      "alamat": "Jl. Raya Jatinegara Timur 85-87 Jakarta 13310"
+    },
+    {
+      "id": 5,
+      "nama": "Rumah Sakit Islam Jakarta",
+      "kota": "Jakarta Pusat",
+      "alamat": "Jl. Cemp. Putih Tengah I No.1, RT.11/RW.5, Cemp. Putih Timur"
+    },
+    {
+      "id": 6,
+      "nama": "Rumah Sakit Muhammad Husni Thamrin",
+      "kota": "Jakarta Pusat",
+      "alamat": "Jl. Salemba Tengah No.24-28"
+    },
+    {
+      "id": 7,
+      "nama": "Rumah Sakit Jantung Harapan Kita",
+      "kota": "Jakarta Barat",
+      "alamat": "Letjen S. Parman Street No.Kav. 87, RT.1/RW.8,"
+    },
+    {
+      "id": 8,
+      "nama": "Rumah Sakit Sumber Waras",
+      "kota": "Jakarta Barat",
+      "alamat": "RT.10/RW.10, Tomang, Grogol petamburan"
+    },
+    {
+      "id": 9,
+      "nama": "Rumah Sakit Mitra Keluarga Kelapa Gading",
+      "kota": "Jakarta Utara",
+      "alamat": "Jl. Raya Gading Kirana No.Kav. 2, RT.18/RW.8"
+    },
+    {
+      "id": 10,
+      "nama": "Rumah Sakit Pantai Indah Kapuk",
+      "kota": "Jakarta Utara",
+      "alamat": "Jl. Pantai Indah Utara 3, Kapuk Muara, Kec. Penjaringan, Kota Jkt Utara"
     }
   ]
 }

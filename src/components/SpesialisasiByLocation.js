@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ArrowLeft from './../img/arrow left.png';
 import SearchIcon from './../img/search icon.png';
 import ArrowRight from './../img/arrow-right.png';
-import { fetchSpesialisasiByLocation } from '../actions/cariSpesialisasiByLocation';
+import { fetchingKlinik } from '../actions/getKlinik';
 import { selectSpesialisasi } from '../actions/selectSpesialisasi';
 import { fetchingDokter } from '../actions/getDokter';
 import { selectLocation } from '../actions/selectLocation';
@@ -22,7 +22,7 @@ export class SpesialisasiByLocation extends Component {
 
     componentDidMount(){
         this.props.onFetchDokter();
-        this.props.onFetchSpesialisasi();
+        this.props.onFetchingKlinik();
     }
 
     handleChange(event){
@@ -134,8 +134,8 @@ const mapStateToProps = (state) => {
   
   const mapDispatchToProps = (dispatch) => {
     return {
-      onFetchSpesialisasi : () => {
-        dispatch(fetchSpesialisasiByLocation())
+      onFetchingKlinik : () => {
+        dispatch(fetchingKlinik())
       },
       onSelectLocation : (location) => {
           dispatch(selectLocation(location))
@@ -153,7 +153,7 @@ const mapStateToProps = (state) => {
       klinik: PropTypes.array.isRequired,
       location: PropTypes.string.isRequired,
       dokter: PropTypes.array.isRequired,
-      onFetchSpesialisasi: PropTypes.func.isRequired,
+      onFetchingKlinik: PropTypes.func.isRequired,
       onSelectLocation: PropTypes.func.isRequired,
       onSelectSpesialisasi: PropTypes.func.isRequired
   }

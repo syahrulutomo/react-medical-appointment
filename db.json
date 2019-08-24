@@ -694,6 +694,11 @@
           "pukul": "9.00 - 11.00"
         },
         {
+          "id_dokter": 1,
+          "hari": "Rabu",
+          "pukul": "13.00 - 15.00"
+        },
+        {
           "id_dokter": 6,
           "hari": "Senin",
           "pukul": "10.00 - 12.00"
@@ -735,6 +740,11 @@
           "id_dokter": 15,
           "hari": "Selasa",
           "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 3,
+          "hari": "Kamis",
+          "pukul": "9.00 - 11.00"
         }
       ]
     },
@@ -758,6 +768,11 @@
           "id_dokter": 17,
           "hari": "Jumat",
           "pukul": "9.00 - 11.00"
+        },
+        {
+          "id_dokter": 1,
+          "hari": "Sabtu",
+          "pukul": "13.00 - 15.00"
         }
       ]
     },
@@ -776,6 +791,11 @@
           "id_dokter": 19,
           "hari": "Kamis",
           "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 1,
+          "hari": "Jumat",
+          "pukul": "13.00 - 15.00"
         },
         {
           "id_dokter": 20,

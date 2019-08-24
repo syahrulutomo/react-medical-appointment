@@ -3,28 +3,25 @@ import ArrowLeft from './../img/arrow left.png';
 import SearchIcon from './../img/search icon.png';
 import ArrowRight from './../img/arrow-right.png';
 import { fetchSpesialisasiByLocation } from '../actions/cariSpesialisasiByLocation';
+import { selectSpesialisasi } from '../actions/selectSpesialisasi';
+import { fetchingDokter } from '../actions/getDokter';
 import { selectLocation } from '../actions/selectLocation';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { selectSpesialisasi } from '../actions/selectSpesialisasi';
+
 import { Link } from 'react-router-dom';
 
 
 export class SpesialisasiByLocation extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            dokterList: [],
-            spesialisasiList: [] 
-        }
-        this.getDokterList = this.getDokterList.bind(this);
         this.getSpesialisasiList = this.getSpesialisasiList.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount(){
-        this.getDokterList();
+        this.props.onFetchDokter();
         this.props.onFetchSpesialisasi();
     }
 
@@ -34,13 +31,6 @@ export class SpesialisasiByLocation extends Component {
 
     handleClick(event){
         this.props.onSelectSpesialisasi(event.currentTarget.getAttribute('data-spesialisasi'));
-    }
-
-    // get all dokter list
-    getDokterList(){
-        fetch('http://localhost:3001/dokter')
-        .then(res => res.json())
-        .then(data => { this.setState({ dokterList: [...data] }) })
     }
 
     // get spesialisasi data
@@ -57,9 +47,10 @@ export class SpesialisasiByLocation extends Component {
 
         // get mapped data spesialisasi and keahlian
         for(let i = 0; i < idDokters.length; i++){
-            const selectedSpesialisasi = this.state.dokterList.filter( data => data.id === idDokters[i]['id_dokter'] ).map( data => data['spesialisasi']); 
-            const keahlian = this.state.dokterList.filter( data => data.id === idDokters[i]['id_dokter'] ).map( data => data['keahlian']);
-            const ids = this.state.dokterList.filter( data => data.id === idDokters[i]['id_dokter'] ).map( data => data['id']);
+            const selectedSpesialisasi = this.props.dokter.filter( data => data.id === idDokters[i]['id_dokter'] ).map( data => data['spesialisasi']); 
+            const keahlian = this.props.dokter.filter( data => data.id === idDokters[i]['id_dokter'] ).map( data => data['keahlian']);
+            const ids = this.props.dokter.filter( data => data.id === idDokters[i]['id_dokter'] ).map( data => data['id']);
+            
             selectedSpesialisasi.push(...keahlian);
             selectedSpesialisasi.push(...ids);
             spesialisasiList.push(selectedSpesialisasi);
@@ -83,7 +74,7 @@ export class SpesialisasiByLocation extends Component {
         
         const spesialisasiByLocation = this.props.klinik.length > 0 ? this.props.klinik.filter( data => data.kota === this.props.location ) :this.props.klinik.filter( data => data.kota === 'Jakarta Selatan' );
         let list = [];
-        if(this.state.dokterList.length > 0){
+        if(this.props.dokter.length > 0){
             list = [...this.getSpesialisasiList(spesialisasiByLocation)];
         }
         
@@ -109,7 +100,7 @@ export class SpesialisasiByLocation extends Component {
                     <Link className="icon-back__link" to="/"><img className="icon-back" src={ArrowLeft} alt="" /></Link>
                     <div className="cari-dokter__location">
                         <p className="cari-dokter__title">Dokter di sekitar</p>
-                        <select className="select-kota" onChange={this.handleChange}>
+                        <select className="select-kota" onChange={this.handleChange} value={this.props.location}>
                             <option className="select-kota__option" value="Jakarta Selatan">Jakarta Selatan</option>
                             <option className="select-kota__option" value="Jakarta Timur">Jakarta Timur</option>
                             <option className="select-kota__option" value="Jakarta Pusat">Jakarta Pusat</option>
@@ -137,6 +128,7 @@ const mapStateToProps = (state) => {
       klinik: state.booking.klinik,
       location: state.booking.selectedLocation,
       spesialisasi: state.booking.spesialisasi,
+      dokter: state.booking.dokter
     }
   }
   
@@ -150,6 +142,9 @@ const mapStateToProps = (state) => {
       },
       onSelectSpesialisasi : (spesialisasi) => {
         dispatch(selectSpesialisasi(spesialisasi))
+      },
+      onFetchDokter: () => {
+          dispatch(fetchingDokter())
       }
     }
   } 
@@ -157,7 +152,7 @@ const mapStateToProps = (state) => {
   SpesialisasiByLocation.propTypes = {
       klinik: PropTypes.array.isRequired,
       location: PropTypes.string.isRequired,
-      spesialisasi: PropTypes.string.isRequired,
+      dokter: PropTypes.array.isRequired,
       onFetchSpesialisasi: PropTypes.func.isRequired,
       onSelectLocation: PropTypes.func.isRequired,
       onSelectSpesialisasi: PropTypes.func.isRequired

@@ -3,6 +3,7 @@ $background-color2: #ffffff;
 
 $font-color1: #00508d;
 $font-color2: #757575;
+$font-color3: #202020;
 
 $font-family1: 'Open Sans', sans-serif;
 
@@ -55,7 +56,7 @@ $font-family1: 'Open Sans', sans-serif;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      background-color: #ffffff;
+      background-color: $background-color2;
       border-radius: 5px;
       margin: .3rem 0;
       padding: 1rem .5rem;
@@ -140,6 +141,10 @@ $font-family1: 'Open Sans', sans-serif;
     width: 1.5rem;
     height: 1.5rem;
     margin: auto 0 auto 1rem;
+  
+    &__link{
+      display: flex;
+    }
   }
 
   &__location{
@@ -158,7 +163,7 @@ $font-family1: 'Open Sans', sans-serif;
   .select-kota{
     border:0px;
     outline:0px;
-    background-color:white;
+    background-color: $background-color2;
     -webkit-appearance:none;
     -moz-appearance: none;
     appearance:none;
@@ -185,7 +190,7 @@ $font-family1: 'Open Sans', sans-serif;
       border: none;
       box-sizing: border-box;
       border-radius: 3px;
-      padding: 0.25rem 1rem;
+      padding: 0.5rem 1rem;
       color: #F0F0F0;
       font-family: $font-family1;
       
@@ -221,7 +226,7 @@ $font-family1: 'Open Sans', sans-serif;
 
     &__title{
       font-family: $font-family1;
-      color: #202020;
+      color: $font-color3;
       font-size: .9rem;
       margin-bottom: .5rem;
     }
@@ -237,6 +242,205 @@ $font-family1: 'Open Sans', sans-serif;
       width: 1rem;
       height: 1rem;
       align-self: center;
+    }
+  }
+}
+
+.jadwal-location__container{
+  min-height: 100vh;
+  background-color: #fafafa;
+
+  .jadwal-location{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #E8E8E8;
+    background-color: $background-color2; 
+  
+    .icon-back{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: auto 0 auto 1rem;
+    
+      &__link{
+        display: flex;
+      }
+    }
+  
+    &__location{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    &__title{
+      font-family: $font-family1;
+      color: $font-color2;
+      font-size: .8rem;
+      margin: 0.5rem 0 0 1.2rem;
+    }
+  
+    .select-kota{
+      border:0px;
+      outline:0px;
+      background-color: $background-color2;
+      -webkit-appearance:none;
+      -moz-appearance: none;
+      appearance:none;
+      background: right url('img/arrow-down.png')  no-repeat;
+      padding: 0 1.2rem;
+      font-family: $font-family1;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $font-color1;
+    }
+  
+    .search-container{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem 1.25rem;
+    
+      .searchbox{
+        border: none;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 0.5rem 1rem;
+        color: #F0F0F0;
+        font-family: $font-family1;
+        
+        &:focus{
+          outline: none;
+          border: 1px solid $background-color1;
+          box-shadow: 0 0 10px $background-color1;
+        }
+      }
+    }
+
+    .search-icon{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin: auto 1rem auto 22%;
+      justify-self: flex-end;
+    }
+
+    &__sort-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1rem 0 .75rem 0;
+      
+      .jadwal-location__sort{
+        border: 1px solid $background-color1;
+        border-radius: 20px;
+        font-family: $font-family1;
+        color: $font-color2;
+        font-size: .8rem;
+        font-weight: 700;
+        margin-left: .25rem;
+        margin-right: .25rem;
+        padding: .5rem .75rem;
+      }
+
+    }
+  
+  }
+
+  .jadwal-praktik__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem;
+  
+    .jadwal-praktik{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+      background-color: $background-color2;
+      border: 2px solid #E8E8E8;
+      border-radius: 10px;
+      padding: 1rem;
+
+      &__desc{
+        width: 76%;
+        font-family: $font-family1;
+
+        &__nama{
+          color: $font-color1;
+          font-size: .9rem;
+          font-weight: 700;
+        }
+
+        &__rs{
+          display: flex;
+          margin: 1rem 0;
+
+          &__icon{
+            width: 1rem;
+            height: 1rem;
+            margin-right: .7rem;
+          }
+
+          &__nama{       
+            color: $font-color3;
+            font-size: .9rem;
+            font-weight: 700;
+          }
+        }
+
+        &__jadwal{
+          display: flex;
+          flex-wrap: wrap;
+
+          &__icon{
+            width: 1rem;
+            height: 1rem;
+            margin-right: .7rem;
+          }
+
+          &__jadwal{
+            color: #43a344;
+            font-size: .75rem;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &__photo-container{
+        width: 24%;
+      }
+
+      &__photo{
+        width: 100%;
+        height: 58%;
+        border-radius: 50%;
+      }
+
+      &__janji-online{
+        width: 100%;
+        background-color: $background-color1;
+        border-radius: 3px;
+        margin: 1rem .5rem 0 .5rem;
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+
+        &__icon{
+          width: 1rem;
+          height: 1rem;
+          margin-right: 1rem;
+        }
+
+        &__desc{
+          color: $font-color1;
+          font-family: $font-family1;
+          font-weight: 700;
+          font-size: .8rem;
+          letter-spacing: .5px;
+
+        }
+      }
     }
   }
 }

@@ -246,7 +246,401 @@
         "Luka Gores"
       ],
       "janji_online": "bisa" 
+    },
+    {
+      "id": 13,
+      "nama": "dr. Sabrina Ratna Palupi",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan Abdomen",
+        "Nebulizer",
+        "Perawatan Kulit",
+        "Perawatan Luka"
+      ],
+      "penyakit_terkait": [
+        "Luka Gores",
+        "Luka Bakar",
+        "Luka Tusuk"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 14,
+      "nama": "dr. Ira Agustine Mutiara, Sp.THT-KL",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Wanita",
+      "keahlian": [
+        "Bedah THT",
+        "Foto Rontgen THT",
+        "Tes Pendengaran",
+        "Tindakan THT",
+        "Irigasi Telinga",
+        "Nasal & Sinus Endoscopic Surgery"
+      ],
+      "penyakit_terkait": [
+        "Kanker nasofaring",
+        "Radang amandel (tonsilitis)",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 15,
+      "nama": "drg. Christine Hadiwidjaya",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi",
+        "Pembersihan Gigi",
+        "Cabut Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 16,
+      "nama": "dr. Ronald Winardi Kartika, Sp. BTKV",
+      "spesialisasi": "Dokter Spesialis Jantung",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Bedah Toraks dan Kardiovaskuler",
+        "Operasi Jantung",
+        "Pemeriksaan Jantung",
+        "Kateterisasi Jantung",
+        "Pemasangan Alat Pacu Jantung"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Arteri Koroner",
+        "Trachycardia",
+        "Penyakit Otot Jantung",
+        "Penyakit Katup Jantung",
+        "Bradikardi" 
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 17,
+      "nama": "dr. R. Amanda Sumantri, Sp.KK",
+      "spesialisasi": "Dokter Spesialis Kulit dan Kelamin",
+      "gender": "Wanita",
+      "keahlian": [
+        "Perawatan Pengencangan Kulit",
+        "Perawatan Peremajaan Kulit"
+      ],
+      "penyakit_terkait": [
+        "Jerawat",
+        "Komedo"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 18,
+      "nama": "dr. Syarifah Jannatin Aliyah",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Wanita",
+      "keahlian": [
+        "Vaksin",
+        "Anamnesis",
+        "Pemeriksaan Rontgen"
+      ],
+      "penyakit_terkait": [
+        "Kejang demam",
+        "Migrain, sakit kepala, dan vertigo",
+        "Hipertensi",
+        "Rhinitis alergi dan rhinitis akut",
+        "Infeksi bakteri, jamur, dan parasit"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 19,
+      "nama": "Dr. Muhammad Gibran Fauzi Harmani, Sp.JP",
+      "spesialisasi": "Dokter Spesialis Jantung",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Bedah Toraks dan Kardiovaskuler",
+        "Operasi Jantung",
+        "Pemeriksaan Jantung",
+        "Kateterisasi Jantung",
+        "Pemasangan Alat Pacu Jantung"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Arteri Koroner",
+        "Trachycardia",
+        "Penyakit Otot Jantung",
+        "Penyakit Katup Jantung",
+        "Bradikardi" 
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 20,
+      "nama": "drg. Ayu Wulandari",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi",
+        "Pembersihan Gigi",
+        "Cabut Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 21,
+      "nama": "dr. Djoko Srijono, Sp.THT-KL",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Foto Rontgen THT",
+        "Bedah THT",
+        "Tes Pendengaran",
+        "Tindakan THT"
+
+      ],
+      "penyakit_terkait": [
+        "Kanker nasofaring",
+        "Radang amandel (tonsilitis)",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 22,
+      "nama": "dr. Farida Zubier, Sp.KK",
+      "spesialisasi": "Dokter Spesialis Kulit dan Kelamin",
+      "gender": "Wanita",
+      "keahlian": [
+        "Peeling",
+        "Perawatan Pengencangan Kulit",
+        "Perawatan Peremajaan Kulit"
+      ],
+      "penyakit_terkait": [
+        "Jerawat",
+        "Komedo"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 23,
+      "nama": "dr. Yislam Aljaidi",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Vaksin",
+        "Anamnesis",
+        "Pemeriksaan Rontgen"
+      ],
+      "penyakit_terkait": [
+        "Kejang demam",
+        "Migrain, sakit kepala, dan vertigo",
+        "Hipertensi",
+        "Rhinitis alergi dan rhinitis akut",
+        "Infeksi bakteri, jamur, dan parasit"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 24,
+      "nama": "dr. Frits Reinier Wantian Suling, Sp.JP (K), FIHA",
+      "spesialisasi": "Dokter Spesialis Jantung",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Ekokardiografi",
+        "Pemeriksaan Jantung",
+        "Ambulatory BP",
+        "Biopsi Otot Jantung",
+        "Angiografi",
+        "CT Coronary Angiogram",
+        "Percutaneous Coronary Intervensi (PCI)",
+        "Cardiac Resynchronisation Therapy (CRT) Device Implantation",
+        "Stress Test"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Arteri Koroner",
+        "Trachycardia",
+        "Penyakit Otot Jantung",
+        "Penyakit Katup Jantung",
+        "Bradikardi" 
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 25,
+      "nama": "drg. Elisabeth Leksonowati",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi",
+        "Pembersihan Gigi",
+        "Cabut Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 26,
+      "nama": "dr. Harim Priyono, Sp.THT – KL(K)",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Foto Rontgen THT",
+        "Bedah THT",
+        "Tes Pendengaran",
+        "Tindakan THT"
+
+      ],
+      "penyakit_terkait": [
+        "Kanker nasofaring",
+        "Radang amandel (tonsilitis)",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 27,
+      "nama": "dr. Lis Surachmiati Suseno, SpKK",
+      "spesialisasi": "Dokter Spesialis Kulit dan Kelamin",
+      "gender": "Wanita",
+      "keahlian": [
+        "Peeling",
+        "Perawatan Pengencangan Kulit",
+        "Perawatan Peremajaan Kulit"
+      ],
+      "penyakit_terkait": [
+        "Jerawat",
+        "Komedo"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 28,
+      "nama": "dr. Ariani Putri Devanti",
+      "spesialisasi": "Dokter Umum",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Vaksin",
+        "Cek Tensi Darah",
+        "Anamnesis",
+        "Pemeriksaan Rontgen"
+      ],
+      "penyakit_terkait": [
+        "Kejang demam",
+        "Migrain, sakit kepala, dan vertigo",
+        "Hipertensi",
+        "Rhinitis alergi dan rhinitis akut",
+        "Infeksi bakteri, jamur, dan parasit"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 29,
+      "nama": "dr. Pradana Tedjasukmana, Sp.JP(K)",
+      "spesialisasi": "Dokter Spesialis Jantung",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Ambulatory BP",
+        "Biopsi Otot Jantung",
+        "Angiografi",
+        "CT Coronary Angiogram",
+        "Percutaneous Coronary Intervensi (PCI)",
+        "Cardiac Resynchronisation Therapy (CRT) Device Implantation",
+        "Stress Test"
+      ],
+      "penyakit_terkait": [
+        "Penyakit Arteri Koroner",
+        "Trachycardia",
+        "Penyakit Otot Jantung",
+        "Penyakit Katup Jantung",
+        "Bradikardi" 
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 30,
+      "nama": "drg. Grietje Tanumulia",
+      "spesialisasi": "Dokter Gigi",
+      "gender": "Wanita",
+      "keahlian": [
+        "Pembersihan Gigi",
+        "Cabut Gigi",
+        "Pemeriksaan dan Konsultasi Perawatan Gigi",
+        "Scaling Gigi",
+        "Tambal Gigi"
+      ],
+      "penyakit_terkait": [
+        "Sakit Gigi",
+        "Karies Gigi",
+        "Radang Gusi",
+        "Infeksi Gusi"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 31,
+      "nama": "dr. I Made Subrata R, SpTHT-KL",
+      "spesialisasi": "Dokter Spesialis THT",
+      "gender": "Laki-Laki",
+      "keahlian": [
+        "Foto Rontgen THT",
+        "Bedah THT",
+        "Tes Pendengaran",
+        "Tindakan THT"
+      ],
+      "penyakit_terkait": [
+        "Kanker nasofaring",
+        "Radang amandel (tonsilitis)",
+        "Kesulitan Menelan",
+        "Laringitis",
+        "Difteri"
+      ],
+      "janji_online": "bisa" 
+    },
+    {
+      "id": 32,
+      "nama": "dr. Maria Jani Hartanto, SpKK",
+      "spesialisasi": "Dokter Spesialis Kulit dan Kelamin",
+      "gender": "Wanita",
+      "keahlian": [
+        "Peeling",
+        "Perawatan Pengencangan Kulit",
+        "Perawatan Peremajaan Kulit"
+      ],
+      "penyakit_terkait": [
+        "Jerawat",
+        "Komedo"
+      ],
+      "janji_online": "bisa" 
     }
+    
   ],
   "klinik": [
     {
@@ -329,49 +723,165 @@
       "id": 3,
       "nama": "Rumah Sakit Kepolisian Pusat R.S. SUKANTO",
       "kota": "Jakarta Timur",
-      "alamat": "Kramat Jati"
+      "alamat": "Kramat Jati",
+      "jadwal": [
+        {
+          "id_dokter": 13,
+          "hari": "Senin",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 15,
+          "hari": "Selasa",
+          "pukul": "10.00 - 12.00"
+        }
+      ]
     },
     {
       "id": 4,
       "nama": "RS Premier Jatinegara",
       "kota": "Jakarta Timur",
-      "alamat": "Jl. Raya Jatinegara Timur 85-87 Jakarta 13310"
+      "alamat": "Jl. Raya Jatinegara Timur 85-87 Jakarta 13310",
+      "jadwal": [
+        {
+          "id_dokter": 14,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 16,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 17,
+          "hari": "Jumat",
+          "pukul": "9.00 - 11.00"
+        }
+      ]
     },
     {
       "id": 5,
       "nama": "Rumah Sakit Islam Jakarta",
       "kota": "Jakarta Pusat",
-      "alamat": "Jl. Cemp. Putih Tengah I No.1, RT.11/RW.5, Cemp. Putih Timur"
+      "alamat": "Jl. Cemp. Putih Tengah I No.1, RT.11/RW.5, Cemp. Putih Timur",
+      "jadwal": [
+        {
+          "id_dokter": 18,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 19,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 20,
+          "hari": "Jumat",
+          "pukul": "9.00 - 11.00"
+        }
+      ]
     },
     {
       "id": 6,
       "nama": "Rumah Sakit Muhammad Husni Thamrin",
       "kota": "Jakarta Pusat",
-      "alamat": "Jl. Salemba Tengah No.24-28"
+      "alamat": "Jl. Salemba Tengah No.24-28",
+      "jadwal": [
+        {
+          "id_dokter": 21,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 22,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        }
+      ]
     },
     {
       "id": 7,
       "nama": "Rumah Sakit Jantung Harapan Kita",
       "kota": "Jakarta Barat",
-      "alamat": "Letjen S. Parman Street No.Kav. 87, RT.1/RW.8,"
+      "alamat": "Letjen S. Parman Street No.Kav. 87, RT.1/RW.8,",
+      "jadwal": [
+        {
+          "id_dokter": 23,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 24,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 25,
+          "hari": "Jumat",
+          "pukul": "9.00 - 11.00"
+        }
+      ]
     },
     {
       "id": 8,
       "nama": "Rumah Sakit Sumber Waras",
       "kota": "Jakarta Barat",
-      "alamat": "RT.10/RW.10, Tomang, Grogol petamburan"
+      "alamat": "RT.10/RW.10, Tomang, Grogol petamburan",
+      "jadwal": [
+        {
+          "id_dokter": 26,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 27,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        }
+      ]
     },
     {
       "id": 9,
       "nama": "Rumah Sakit Mitra Keluarga Kelapa Gading",
       "kota": "Jakarta Utara",
-      "alamat": "Jl. Raya Gading Kirana No.Kav. 2, RT.18/RW.8"
+      "alamat": "Jl. Raya Gading Kirana No.Kav. 2, RT.18/RW.8",
+      "jadwal": [
+        {
+          "id_dokter": 28,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 29,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        },
+        {
+          "id_dokter": 30,
+          "hari": "Jumat",
+          "pukul": "9.00 - 11.00"
+        }
+      ]
     },
     {
       "id": 10,
       "nama": "Rumah Sakit Pantai Indah Kapuk",
       "kota": "Jakarta Utara",
-      "alamat": "Jl. Pantai Indah Utara 3, Kapuk Muara, Kec. Penjaringan, Kota Jkt Utara"
+      "alamat": "Jl. Pantai Indah Utara 3, Kapuk Muara, Kec. Penjaringan, Kota Jkt Utara",
+      "jadwal": [
+        {
+          "id_dokter": 31,
+          "hari": "Rabu",
+          "pukul": "9.00 - 1.00"
+        },
+        {
+          "id_dokter": 32,
+          "hari": "Kamis",
+          "pukul": "10.00 - 12.00"
+        }
+      ]
     }
   ]
 }

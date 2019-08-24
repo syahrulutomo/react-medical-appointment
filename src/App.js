@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Home from './components/Home';
 import SpesialisasiByLocation from './components/SpesialisasiByLocation';
-import CariFaskes from './components/CariFaskes';
-import BookingCepat from './components/BookingCepat';
+import JadwalByLocation from './components/JadwalByLocation';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 
@@ -14,14 +13,15 @@ class App extends Component {
 
   render(){
     return (
-      <Router>
-      <div className="app">
-        <Switch>
-            <Route exact path="/" component={Home} />   
-            <Route path="/booking" component={SpesialisasiByLocation} />
-        </Switch>
-      </div>
-      </Router>
+          <div className="app">
+            <Router>
+              <Switch>
+                <Route exact path="/" component={Home} />   
+                <Route path="/spesialisasi" component={SpesialisasiByLocation} />
+                <Route path="/jadwal" component={JadwalByLocation} />
+              </Switch>
+            </Router>
+          </div>
     )
   }
 }

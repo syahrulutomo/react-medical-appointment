@@ -5,6 +5,7 @@ import { SELECT_LOCATION } from './../actions/selectLocation';
 import { combineReducers } from 'redux';
 import { SELECT_SPESIALISASI } from '../actions/selectSpesialisasi';
 import { SELECT_DOKTER } from '../actions/selectDokter';
+import { SEARCH_DOKTER } from '../actions/searchDokter';
 
 const defaultState = {
     isLoading: false,
@@ -37,6 +38,8 @@ const bookingReducer = (state = defaultState, action) => {
       return Object.assign({}, state, { spesialisasi: action.payload});
     case SELECT_DOKTER:
       return Object.assign({}, state, { selectedDokterId: action.payload});
+    case SEARCH_DOKTER:
+      return Object.assign({}, state, { selectedDokter: {...action.payload} });
     default: 
       return state;
   }

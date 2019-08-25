@@ -8,6 +8,9 @@ import { fetchingDokter } from '../actions/getDokter';
 import { selectLocation } from '../actions/selectLocation';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import SuggestionInputSearch from 'suggestion-react-input-search';
+import { searchDokter } from '../actions/searchDokter';
+import { selectDokter } from '../actions/selectDokter'; 
 
 import { Link } from 'react-router-dom';
 
@@ -15,9 +18,14 @@ import { Link } from 'react-router-dom';
 export class SpesialisasiByLocation extends Component {
     constructor(props){
         super(props);
+        this.state = {
+            searchText: ''
+        }
         this.getSpesialisasiList = this.getSpesialisasiList.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.handleSearch = this.handleSearch.bind(this);
+        this.handleOnSubmit = this.handleOnSubmit.bind(this);
     }
 
     componentDidMount(){
@@ -31,6 +39,22 @@ export class SpesialisasiByLocation extends Component {
 
     handleClick(event){
         this.props.onSelectSpesialisasi(event.currentTarget.getAttribute('data-spesialisasi'));
+    }
+
+    handleOnSubmit(term) {
+        console.log(term);
+        this.setState({
+            searchText: term
+        })
+    }
+
+    handleSearch(){
+        const id = this.props.dokter.filter(data => data.nama.toLowerCase() === this.state.searchText).map(data => data.id);
+        this.props.onSelectDokter(id);
+        
+        fetch('http://localhost:3001/dokter?id='+id[0])
+        .then(res => res.json())
+        .then(data => this.props.onSearchDokter(data)); 
     }
 
     // get spesialisasi data
@@ -71,7 +95,8 @@ export class SpesialisasiByLocation extends Component {
     }
 
     render() {
-        
+        console.log(this.props.selectedDokter);
+        const recentSearches = this.props.dokter.length > 0 ? this.props.dokter.map(data => data.nama) : ['tunggu sebentar..'];
         const spesialisasiByLocation = this.props.klinik.length > 0 ? this.props.klinik.filter( data => data.kota === this.props.location ) :this.props.klinik.filter( data => data.kota === 'Jakarta Selatan' );
         let list = [];
         if(this.props.dokter.length > 0){
@@ -109,8 +134,19 @@ export class SpesialisasiByLocation extends Component {
                         </select>
                     </div>
                     <div className="search-container">
-                        <img className="search-icon" src={SearchIcon} alt=""/>
-                        <input className="searchbox" placeholder="Cari nama dokter"/>
+                        <Link to="/searched-profil"><img className="search-icon" src={SearchIcon} alt="" onClick={this.handleSearch}/></Link>
+                        {
+                            this.props.dokter.length > 0 ? (
+                                <SuggestionInputSearch
+                                    onSubmitFunction={this.handleOnSubmit}
+                                    recentSearches={recentSearches}
+                                    placeholder="Cari nama dokter"
+                                    inputPosition='start'
+                                />
+                            ) : ''
+                        }
+                        
+                        {/* <input className="searchbox" placeholder="Cari nama dokter"/> */}
                     </div>       
                 </div>
 
@@ -128,7 +164,8 @@ const mapStateToProps = (state) => {
       klinik: state.booking.klinik,
       location: state.booking.selectedLocation,
       spesialisasi: state.booking.spesialisasi,
-      dokter: state.booking.dokter
+      dokter: state.booking.dokter,
+      selectedDokter: state.booking.selectedDokter
     }
   }
   
@@ -145,7 +182,13 @@ const mapStateToProps = (state) => {
       },
       onFetchDokter: () => {
           dispatch(fetchingDokter())
-      }
+      },
+      onSearchDokter: (data) => {
+          dispatch(searchDokter(data))
+      },
+      onSelectDokter : (data) => {
+        dispatch(selectDokter(data))
+    }
     }
   } 
 

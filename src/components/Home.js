@@ -16,6 +16,7 @@ export default class Home extends Component {
                     <p className="home__headline">Selamat datang di IHC Mobile</p>
                     <p className="home__greeting">Kami memberikan pelayanan komprehensif dan terpadu dengan standar pelayanan terakreditasi.</p>
                     <div className="home__menu">
+                        
                         <Link to="/spesialisasi">
                             <div className="home__menu__item">
                                 <img className="home__menu__item__logo" src={Logo1} alt="logo home menu 1"/>
@@ -26,7 +27,7 @@ export default class Home extends Component {
                                 <img className="home__menu__item__arrow" src={Arrow} alt="arrow icon1"/>
                             </div>
                         </Link>
-                        <Link to="/jadwal">
+                      
                             <div className="home__menu__item">
                                 <img className="home__menu__item__logo" src={Logo2} alt="logo home menu 2"/>
                                 <div className="home__menu__item__desc">
@@ -35,8 +36,7 @@ export default class Home extends Component {
                                 </div>
                                 <img className="home__menu__item__arrow" src={Arrow} alt="arrow icon2"/>
                             </div>
-                        </Link>
-                        <Link to="/dokter">
+                       
                             <div className="home__menu__item">
                                 <img className="home__menu__item__logo" src={Logo3} alt="logo home menu 3"/>
                                 <div className="home__menu__item__desc">
@@ -45,7 +45,7 @@ export default class Home extends Component {
                                 </div>
                                 <img className="home__menu__item__arrow" src={Arrow} alt="arrow icon1"/>
                             </div>
-                        </Link>
+                     
                         
                     </div>
                 </div>

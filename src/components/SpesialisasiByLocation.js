@@ -108,7 +108,7 @@ export class SpesialisasiByLocation extends Component {
                     <div
                         data-spesialisasi={data[0]}
                         onClick={this.handleClick} 
-                        className="spesialisasi__container">              
+                        className="spesialisasi">              
                         <div className="spesialisasi__item" >
                             <p className="spesialisasi__item__title">{data[0]}</p>        
                             <p className="spesialisasi__item__desc">{data[1][0]}</p>
@@ -151,8 +151,10 @@ export class SpesialisasiByLocation extends Component {
                 </div>
 
                 <p className="cari-dokter__spesialisasi">Spesialisasi Dokter</p>
-
-                { listSpesialisasi }
+                <div className="spesialisasi-container">
+                    { listSpesialisasi }
+                </div>
+                
             </div>
         )
     }

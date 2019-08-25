@@ -49,7 +49,6 @@ $font-family1: 'Open Sans', sans-serif;
   &__menu{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin: 1.5rem 0;
 
     &__item{
@@ -60,8 +59,8 @@ $font-family1: 'Open Sans', sans-serif;
       border-radius: 5px;
       margin: .3rem 0;
       padding: 1rem .5rem;
-      box-shadow: 0px 0px 1px 0px #b6bab6;
-      
+      box-shadow: 0px 0px 1px 0px #b6bab6;  
+
       &__logo{
         width: 3.5rem;
         height: 3.5rem;
@@ -129,9 +128,13 @@ $font-family1: 'Open Sans', sans-serif;
 .cari-dokter__container{
   min-height: 100vh;
   background-color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
 }
 
 .cari-dokter{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 2px solid #E8E8E8;
@@ -215,43 +218,49 @@ $font-family1: 'Open Sans', sans-serif;
   }
 }
 
-.spesialisasi__container{
+.spesialisasi-container{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: $background-color2;
-  border-bottom: 2px solid $background-color1;
+  flex-direction: column;
 
-  .spesialisasi__item{
+  .spesialisasi{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    padding: .75rem 1rem;
-
-    &__title{
-      font-family: $font-family1;
-      color: $font-color3;
-      font-size: .9rem;
-      margin-bottom: .5rem;
-    }
-
-    &__desc{
-      font-family: $font-family1;
-      color: $font-color2;
-      font-size: .75rem;
-      margin-top: .2rem;
-    }
-
-    &__arrow{
-      width: 1rem;
-      height: 1rem;
-      align-self: center;
+    justify-content: space-between;
+    background-color: $background-color2;
+    border-bottom: 2px solid $background-color1;
+  
+    &__item{
+      padding: .75rem 1rem;
+  
+      &__title{
+        font-family: $font-family1;
+        color: $font-color3;
+        font-size: .9rem;
+        margin-bottom: .5rem;
+      }
+  
+      &__desc{
+        font-family: $font-family1;
+        color: $font-color2;
+        font-size: .75rem;
+        margin-top: .2rem;
+      }
+  
+      &__arrow{
+        width: 1rem;
+        height: 1rem;
+        align-self: center;
+      }
     }
   }
 }
 
+
 .search-input-container .search-input-container__inner{
   width: 80vw;
+  position: relative;
 }
 
 .jadwal-location__container{
@@ -559,8 +568,8 @@ $font-family1: 'Open Sans', sans-serif;
     }
 
     &__foto{
-      width: 20vh;
-      height: 20vh;
+      width: 15vh;
+      height: 15vh;
       border-radius: 50%;
     }
   }
@@ -877,3 +886,50 @@ $font-family1: 'Open Sans', sans-serif;
 
 }
 
+@media (min-width: 450px){
+  .home{
+    padding: 1.4rem;
+  }
+  .home__menu__item{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .cari-dokter{
+    padding: 0 1rem;
+  }
+
+  .spesialisasi{
+    padding: 1rem 1.5rem;
+
+    &__item__desc{
+      margin: .5rem auto;
+    }
+  }
+
+  .spesialisasi-container .spesialisasi__item{
+    padding: 0;
+  }
+
+  .spesialisasi-container .spesialisasi__item__title{
+    margin-bottom: 1rem;
+  }
+
+  .jadwal-location__container .jadwal-praktik__container .jadwal-praktik__photo{
+    height: 20vh;
+  }
+} 
+
+@media (min-width: 605px){
+  .jadwal-location__container .jadwal-praktik__container .jadwal-praktik__photo{
+    height: 25vh;
+  }
+
+  .profil__info__foto{
+    width: 20vh;
+    height: 18vh;
+    border-radius: 50%;
+  }
+}

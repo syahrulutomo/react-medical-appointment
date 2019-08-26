@@ -120,7 +120,7 @@ export class ProfilDokter extends Component {
         }): '';
 
         const jadwalList = (this.getTempatPraktik().length > 0) ? this.getTempatPraktik().map( (data, index) => {
-            
+            console.log(data);
             if(this.state.showAllJadwal === true){
                 return (
                     <div className="profil__jadwal-praktik__item">
@@ -136,11 +136,10 @@ export class ProfilDokter extends Component {
                         </p>
                     <p className="profil__jadwal-praktik__jam">{data[1]['pukul']}</p>
                     {
-                        (data[0]['janji_online'] == 'bisa') ? 
-                        <button className="profil__jadwal-praktik__btn">BUAT JANJI</button> :
-                        ''
-                    }
-                        
+                            (this.props.selectedDokter['janji_online'] == 'bisa') ? 
+                            <button className="profil__jadwal-praktik__btn">BUAT JANJI</button> :
+                            ''
+                    }                      
                     </div>
                 )
             }else if(this.state.showAllJadwal === false){
@@ -159,7 +158,7 @@ export class ProfilDokter extends Component {
                             </p>
                         <p className="profil__jadwal-praktik__jam">{data[1]['pukul']}</p>
                         {
-                            (data[0]['janji_online'] == 'bisa') ? 
+                            (this.props.selectedDokter['janji_online'] == 'bisa') ? 
                             <button className="profil__jadwal-praktik__btn">BUAT JANJI</button> :
                             ''
                         }
@@ -181,7 +180,7 @@ export class ProfilDokter extends Component {
                             </p>
                         <p className="profil__jadwal-praktik__jam">{data[1]['pukul']}</p>
                         {
-                            (data[0]['janji_online'] == 'bisa') ? 
+                            (this.props.selectedDokter['janji_online'] == 'bisa') ? 
                             <button className="profil__jadwal-praktik__btn">BUAT JANJI</button> :
                             ''
                         }

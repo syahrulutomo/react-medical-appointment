@@ -1,11 +1,11 @@
-import { FETCHING_KLINIK, RECEIVED_KLINIK } from "./../actions/getKlinik";
-import { FETCHING_DOKTER, RECEIVED_DOKTER } from "./../actions/getDokter";
-import { FETCHING_DOKTER_BY_ID, RECEIVED_DOKTER_BY_ID } from "./../actions/getDokterById";
-import { SELECT_LOCATION } from "./../actions/selectLocation";
+import { FETCHING_KLINIK, RECEIVED_KLINIK } from "actions/getKlinik";
+import { FETCHING_DOKTER, RECEIVED_DOKTER } from "actions/getDokter";
+import { FETCHING_DOKTER_BY_ID, RECEIVED_DOKTER_BY_ID } from "actions/getDokterById";
+import { SELECT_LOCATION } from "actions/selectLocation";
 import { combineReducers } from "redux";
-import { SELECT_SPESIALISASI } from "../actions/selectSpesialisasi";
-import { SELECT_DOKTER } from "../actions/selectDokter";
-import { SEARCH_DOKTER } from "../actions/searchDokter";
+import { SELECT_SPESIALISASI } from "actions/selectSpesialisasi";
+import { SELECT_DOKTER } from "actions/selectDokter";
+import { SEARCH_DOKTER } from "actions/searchDokter";
 
 const defaultState = {
   isLoading: false,

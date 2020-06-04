@@ -1,10 +1,10 @@
-import React, { Component, } from "react";
-import Home from "./components/Home";
-import SpesialisasiByLocation from "./components/SpesialisasiByLocation";
-import JadwalByLocation from "./components/JadwalByLocation";
-import ProfilDokter from "./components/ProfilDokter";
-import SearchedProfil from "./components/SearchedProfil";
-import { BrowserRouter as Router, Route, Switch, } from "react-router-dom";
+import React, { Component } from "react";
+import Home from "components/Home/Home";
+import SpesialisasiByLocation from "components/SpesialisasiByLocation";
+import JadwalByLocation from "components/JadwalByLocation";
+import ProfilDokter from "components/ProfilDokter";
+import SearchedProfil from "components/SearchedProfil";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 
 

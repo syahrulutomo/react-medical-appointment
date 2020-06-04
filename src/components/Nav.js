@@ -1,9 +1,9 @@
-import React, { Component, } from "react";
+import React, { Component } from "react";
 
-import Nav1 from "./../img/nav1.png";
-import Nav2 from "./../img/nav2.png";
-import Nav3 from "./../img/nav3.png";
-import Nav4 from "./../img/nav4.png";
+import Nav1 from "assets/img/nav1.png";
+import Nav2 from "assets/img/nav2.png";
+import Nav3 from "assets/img/nav3.png";
+import Nav4 from "assets/img/nav4.png";
 
 class Nav extends Component {
   render() {

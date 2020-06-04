@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Grey from "./../img/grey.jpg";
-import ArrowRight from "./../img/arrow-right.png";
-import ArrowLeft from "./../img/arrow left.png";
-import Share from "./../img/share.png";
-import Lokasi from "./../img/lokasi.png";
+import Grey from "assets/img/grey.jpg";
+import ArrowRight from "assets/img/arrow-right.png";
+import ArrowLeft from "assets/img/arrow left.png";
+import Share from "assets/img/share.png";
+import Lokasi from "assets/img/lokasi.png";
 import { connect } from "react-redux";
-import { fetchingDokterById } from "./../actions/getDokterById";
-import { fetchingKlinik } from "../actions/getKlinik";
+import { fetchingDokterById } from "actions/getDokterById";
+import { fetchingKlinik } from "actions/getKlinik";
 import { Link } from "react-router-dom";
 
 class ProfilDokter extends Component {

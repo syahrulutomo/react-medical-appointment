@@ -1,16 +1,17 @@
-import React, { Component, } from "react";
-import Nav from "./Nav";
-import { Link, } from "react-router-dom";
-import medicalLogo from "./../img/medical-logo.png";
-import Logo1 from "./../img/logo-home1.png";
-import Logo2 from "./../img/logo-home2.png";
-import Logo3 from "./../img/logo-home3.png";
-import Arrow from "./../img/arrow-right.png";
+import React, { Component } from "react";
+import Nav from "../Nav";
+import { Link } from "react-router-dom";
+import medicalLogo from "assets/img/medical-logo.png";
+import Logo1 from "assets/img/logo-home1.png";
+import Logo2 from "assets/img/logo-home2.png";
+import Logo3 from "assets/img/logo-home3.png";
+import Arrow from "assets/img/arrow-right.png";
+import classes from "./Home.scss";
 
 class Home extends Component {
   render() {
     return (
-      <div className="container-home">
+      <div className={classes.containerHome}>
         <div className="home">
           <img className="home__logo" src={medicalLogo} alt="Logo IHC"/>
           <p className="home__headline">Selamat datang di IHC Mobile</p>

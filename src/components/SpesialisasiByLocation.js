@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import ArrowLeft from "./../img/arrow left.png";
-import SearchIcon from "./../img/search icon.png";
-import ArrowRight from "./../img/arrow-right.png";
-import { fetchingKlinik } from "../actions/getKlinik";
-import { selectSpesialisasi } from "../actions/selectSpesialisasi";
-import { fetchingDokter } from "../actions/getDokter";
-import { selectLocation } from "../actions/selectLocation";
+import ArrowLeft from "assets/img/arrow left.png";
+import SearchIcon from "assets/img/search icon.png";
+import ArrowRight from "assets/img/arrow-right.png";
+import { fetchingKlinik } from "actions/getKlinik";
+import { selectSpesialisasi } from "actions/selectSpesialisasi";
+import { fetchingDokter } from "actions/getDokter";
+import { selectLocation } from "actions/selectLocation";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import SuggestionInputSearch from "suggestion-react-input-search";
-import { searchDokter } from "../actions/searchDokter";
-import { selectDokter } from "../actions/selectDokter"; 
+import { searchDokter } from "actions/searchDokter";
+import { selectDokter } from "actions/selectDokter"; 
 import { Link } from "react-router-dom";
 
 class SpesialisasiByLocation extends Component {

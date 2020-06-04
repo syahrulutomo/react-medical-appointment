@@ -1,5 +1,5 @@
-import React, { Component, } from "react";
-import { connect, } from "react-redux";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
 class BookingCepat extends Component {
   render() {
@@ -13,7 +13,7 @@ class BookingCepat extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    lokasi: state.booking.selectedLocation,
+    lokasi: state.booking.selectedLocation
   };
 };
 

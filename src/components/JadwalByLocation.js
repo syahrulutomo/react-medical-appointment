@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import ArrowLeft from "./../img/arrow left.png";
-import SearchIcon from "./../img/search icon.png";
-import { selectLocation } from "../actions/selectLocation";
-import { fetchingKlinik} from "../actions/getKlinik";
-import { fetchingDokter } from "../actions/getDokter";
+import ArrowLeft from "assets/img/arrow left.png";
+import SearchIcon from "assets/img/search icon.png";
+import { selectLocation } from "actions/selectLocation";
+import { fetchingKlinik} from "actions/getKlinik";
+import { fetchingDokter } from "actions/getDokter";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import Grey from "./../img/grey.jpg";
-import Klinik from "./../img/klinik.png";
-import JadwalGrey from "./../img/jadwal grey.png";
-import Jadwal from "./../img/jadwal icon.png";
-import JanjiOnline from "./../img/janji online.png";
-import Filter from "./../img/filter.png";
-import Urutkan from "./../img/urutkan.png";
-import { selectDokter } from "../actions/selectDokter";
+import Grey from "assets/img/grey.jpg";
+import Klinik from "assets/img/klinik.png";
+import JadwalGrey from "assets/img/jadwal grey.png";
+import Jadwal from "assets/img/jadwal icon.png";
+import JanjiOnline from "assets/img/janji online.png";
+import Filter from "assets/img/filter.png";
+import Urutkan from "assets/img/urutkan.png";
+import { selectDokter } from "actions/selectDokter";
 
 class JadwalByLocation extends Component {
   constructor(props){

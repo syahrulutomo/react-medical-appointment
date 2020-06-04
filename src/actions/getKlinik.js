@@ -1,18 +1,18 @@
-export const FETCHING_KLINIK = 'FETCHING_KLINIK';
-export const RECEIVED_KLINIK = 'RECEIVED_KLINIK';
+export const FETCHING_KLINIK = "FETCHING_KLINIK";
+export const RECEIVED_KLINIK = "RECEIVED_KLINIK";
 
 const fetchKlinik = () => {
   return {
-      type: FETCHING_KLINIK
-  }
-}
+    type: FETCHING_KLINIK,
+  };
+};
 
 const receivedKlinik = (data) => {
-    return {
-        type: RECEIVED_KLINIK,
-        payload: data
-    }
-}
+  return {
+    type: RECEIVED_KLINIK,
+    payload: data,
+  };
+};
 
 
 export const fetchingKlinik = () => {
@@ -20,13 +20,13 @@ export const fetchingKlinik = () => {
 
     dispatch(fetchKlinik());
 
-    fetch('http://localhost:3001/klinik')
-    .then( res => res.json() )
-    .then( data => {
-      const results = data;
+    fetch("http://localhost:3001/klinik")
+      .then( res => res.json() )
+      .then( data => {
+        const results = data;
       
-      dispatch(receivedKlinik(results)); 
-    });
+        dispatch(receivedKlinik(results)); 
+      });
 
-  }
-}
+  };
+};

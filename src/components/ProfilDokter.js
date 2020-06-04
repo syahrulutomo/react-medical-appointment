@@ -1,13 +1,13 @@
-import React, { Component, } from "react";
+import React, { Component } from "react";
 import Grey from "./../img/grey.jpg";
 import ArrowRight from "./../img/arrow-right.png";
 import ArrowLeft from "./../img/arrow left.png";
 import Share from "./../img/share.png";
 import Lokasi from "./../img/lokasi.png";
-import { connect, } from "react-redux";
-import { fetchingDokterById, } from "./../actions/getDokterById";
-import { fetchingKlinik, } from "../actions/getKlinik";
-import { Link, } from "react-router-dom";
+import { connect } from "react-redux";
+import { fetchingDokterById } from "./../actions/getDokterById";
+import { fetchingKlinik } from "../actions/getKlinik";
+import { Link } from "react-router-dom";
 
 class ProfilDokter extends Component {
   constructor(props){
@@ -18,7 +18,7 @@ class ProfilDokter extends Component {
       showAllJadwal: false,
       showAllLokasi: false,
       jadwalPraktik: [],
-      lokasiPraktik: [],
+      lokasiPraktik: []
     };
     this.showAllJadwal = this.showAllJadwal.bind(this);
     this.showAllKeahlian = this.showAllKeahlian.bind(this);
@@ -38,7 +38,7 @@ class ProfilDokter extends Component {
         if(this.props.selectedDokter.id !== undefined){
           if(this.props.klinik[i]["jadwal"][j]["id_dokter"] === this.props.selectedDokterId){
             const temp = this.props.klinik[i];
-            jadwalList.push([temp,this.props.klinik[i]["jadwal"][j],]);
+            jadwalList.push([temp,this.props.klinik[i]["jadwal"][j]]);
           }
         }
       }
@@ -48,35 +48,35 @@ class ProfilDokter extends Component {
 
   showAllJadwal(){
     this.setState({
-      showAllJadwal: !this.state.showAllJadwal,
+      showAllJadwal: !this.state.showAllJadwal
     });
   }
 
   showAllLokasi(){
     this.setState({
-      showAllLokasi: !this.state.showAllLokasi,
+      showAllLokasi: !this.state.showAllLokasi
     });
   }
 
   showAllKeahlian(){
     this.setState({
-      showAllKeahlian: !this.state.showAllKeahlian,
+      showAllKeahlian: !this.state.showAllKeahlian
     });
   }
 
   showAllPenyakit(){
     this.setState({
-      showAllPenyakit: !this.state.showAllPenyakit,
+      showAllPenyakit: !this.state.showAllPenyakit
     });
   }
 
   render() {
     console.log(this.getTempatPraktik());
-    const days = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu",];
+    const days = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
     const month = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
-      "Juli", "Agustus", "September", "October", "November", "Desember",];
+      "Juli", "Agustus", "September", "October", "November", "Desember"];
     const monthDays = [31, 28, 31, 30, 31, 30,
-      31, 31, 30, 31, 30, 31,];
+      31, 31, 30, 31, 30, 31];
     const d = new Date();
 
     const lokasiList = (this.getTempatPraktik().length > 0) ? this.getTempatPraktik().map( (data,index) => {
@@ -309,7 +309,7 @@ const mapStateToProps = (state) => {
   return{
     selectedDokterId: state.booking.selectedDokterId,
     selectedDokter: state.booking.selectedDokter,
-    klinik: state.booking.klinik,
+    klinik: state.booking.klinik
   };
 };
 
@@ -320,7 +320,7 @@ const mapDispatchToProps = (dispatch) => {
     },
     onFetchingKlinik: () => {
       dispatch(fetchingKlinik());
-    },
+    }
   };
 };
 

@@ -77,25 +77,10 @@
         "error",
         2
       ],
-      "linebreak-style": [
-        "error",
-        "unix"
-      ],
+      "comma-dangle": ["error", "never"],
       "quotes": [
-        "error",
-        "double"
-      ],
-      "semi": [
-        "error",
-        "always"
-      ],
-      "comma-dangle": [
-        "error",
-        "always"
-      ],
-      "no-cond-assign": [
-        "error",
-        "always"
+          "error",
+          "double"
       ],
       "no-console": "off"
     }

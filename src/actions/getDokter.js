@@ -3,14 +3,14 @@ export const RECEIVED_DOKTER = "RECEIVED_DOKTER";
 
 const fetchDokter = () => {
   return {
-    type: FETCHING_DOKTER,
+    type: FETCHING_DOKTER
   };
 };
 
 const receivedDokter = (data) => {
   return {
     type: RECEIVED_DOKTER,
-    payload: data,
+    payload: data
   };
 };
 

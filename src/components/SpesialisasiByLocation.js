@@ -1,23 +1,23 @@
-import React, { Component, } from "react";
+import React, { Component } from "react";
 import ArrowLeft from "./../img/arrow left.png";
 import SearchIcon from "./../img/search icon.png";
 import ArrowRight from "./../img/arrow-right.png";
-import { fetchingKlinik, } from "../actions/getKlinik";
-import { selectSpesialisasi, } from "../actions/selectSpesialisasi";
-import { fetchingDokter, } from "../actions/getDokter";
-import { selectLocation, } from "../actions/selectLocation";
-import { connect, } from "react-redux";
+import { fetchingKlinik } from "../actions/getKlinik";
+import { selectSpesialisasi } from "../actions/selectSpesialisasi";
+import { fetchingDokter } from "../actions/getDokter";
+import { selectLocation } from "../actions/selectLocation";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import SuggestionInputSearch from "suggestion-react-input-search";
-import { searchDokter, } from "../actions/searchDokter";
-import { selectDokter, } from "../actions/selectDokter"; 
-import { Link, } from "react-router-dom";
+import { searchDokter } from "../actions/searchDokter";
+import { selectDokter } from "../actions/selectDokter"; 
+import { Link } from "react-router-dom";
 
 class SpesialisasiByLocation extends Component {
   constructor(props){
     super(props);
     this.state = {
-      searchText: "",
+      searchText: ""
     };
     this.getSpesialisasiList = this.getSpesialisasiList.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -42,7 +42,7 @@ class SpesialisasiByLocation extends Component {
   handleOnSubmit(term) {
     console.log(term);
     this.setState({
-      searchText: term,
+      searchText: term
     });
   }
 
@@ -94,11 +94,11 @@ class SpesialisasiByLocation extends Component {
 
   render() {
     console.log(this.props.selectedDokter);
-    const recentSearches = this.props.dokter.length > 0 ? this.props.dokter.map(data => data.nama) : ["tunggu sebentar..",];
+    const recentSearches = this.props.dokter.length > 0 ? this.props.dokter.map(data => data.nama) : ["tunggu sebentar.."];
     const spesialisasiByLocation = this.props.klinik.length > 0 ? this.props.klinik.filter( data => data.kota === this.props.location ) :this.props.klinik.filter( data => data.kota === "Jakarta Selatan" );
     let list = [];
     if(this.props.dokter.length > 0){
-      list = [...this.getSpesialisasiList(spesialisasiByLocation),];
+      list = [...this.getSpesialisasiList(spesialisasiByLocation)];
     }
         
     const listSpesialisasi = list.map( data => (
@@ -165,7 +165,7 @@ const mapStateToProps = (state) => {
     location: state.booking.selectedLocation,
     spesialisasi: state.booking.spesialisasi,
     dokter: state.booking.dokter,
-    selectedDokter: state.booking.selectedDokter,
+    selectedDokter: state.booking.selectedDokter
   };
 };
   
@@ -188,7 +188,7 @@ const mapDispatchToProps = (dispatch) => {
     },
     onSelectDokter : (data) => {
       dispatch(selectDokter(data));
-    },
+    }
   };
 }; 
 
@@ -198,7 +198,7 @@ SpesialisasiByLocation.propTypes = {
   dokter: PropTypes.array.isRequired,
   onFetchingKlinik: PropTypes.func.isRequired,
   onSelectLocation: PropTypes.func.isRequired,
-  onSelectSpesialisasi: PropTypes.func.isRequired,
+  onSelectSpesialisasi: PropTypes.func.isRequired
 };
   
 export default connect(mapStateToProps,mapDispatchToProps)(SpesialisasiByLocation);

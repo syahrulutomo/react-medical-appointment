@@ -3,14 +3,14 @@ export const RECEIVED_KLINIK = "RECEIVED_KLINIK";
 
 const fetchKlinik = () => {
   return {
-    type: FETCHING_KLINIK,
+    type: FETCHING_KLINIK
   };
 };
 
 const receivedKlinik = (data) => {
   return {
     type: RECEIVED_KLINIK,
-    payload: data,
+    payload: data
   };
 };
 
@@ -27,6 +27,5 @@ export const fetchingKlinik = () => {
       
         dispatch(receivedKlinik(results)); 
       });
-
   };
 };

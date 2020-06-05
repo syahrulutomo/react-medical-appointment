@@ -1,4 +1,4 @@
-
+"use strict";
 
 const fs = require("fs");
 const path = require("path");
@@ -35,7 +35,7 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== "false";
 // makes for a smoother build process.
 const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== "false";
 
-// const isExtendingEslintConfig = process.env.EXTEND_ESLINT === "true";
+const isExtendingEslintConfig = process.env.EXTEND_ESLINT === "true";
 
 const imageInlineSizeLimit = parseInt(
   process.env.IMAGE_INLINE_SIZE_LIMIT || "10000"
@@ -445,8 +445,10 @@ module.exports = function(webpackEnv) {
               test: cssModuleRegex,
               use: getStyleLoaders({
                 importLoaders: 1,
-                modules: true,
-                localIdentName: "[name]__[local]__[hash:base64:5]"
+                sourceMap: isEnvProduction && shouldUseSourceMap,
+                modules: {
+                  getLocalIdent: getCSSModuleLocalIdent
+                }
               })
             },
             // Opt-in support for SASS (using .scss or .sass extensions).

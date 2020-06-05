@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables";
+
+.containerHome {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: $background-color1;
+}
+
+.home {
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+  padding: 1rem 2rem;
+  min-height: 90vh;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__logo {
+    width: 5rem;
+  }
+
+  &__headline {
+    font-family: $font-family1;
+    color: $font-color1;
+    font-size: 1.125rem;
+    margin: 1.8rem 0 .8rem 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__greeting {
+    font-family: $font-family1;
+    color: $font-color2;
+    font-size: .9rem;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+}

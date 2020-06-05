@@ -1,0 +1,55 @@
+@import 'assets/styles/variables';
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  background-color: $background-color2;
+  border-radius: 5px;
+  margin: .5rem 0;
+  padding: 1rem .75rem;
+  box-shadow: 0px 0px 1px 0px #b6bab6;  
+
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__logo {
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-left: .5rem;
+    }
+    
+    &__desc {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: .5rem 0;
+      margin-left: 1rem;
+      justify-content: space-between;
+    }
+
+    .menuTitle {
+      font-family: $font-family1;
+      color: $font-color1;
+      font-size: .9rem;
+    }
+    
+    .menuDesc {
+      font-family: $font-family1;
+      color: $font-color2;
+      font-size: .9rem;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-self: center;
+    width: 1rem;
+
+    &__arrow {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
